@@ -9,12 +9,15 @@
     "build": "tsc && shx chmod +x dist/*.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "smithery dev",
+    "smithery:build": "smithery build"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
+    "@smithery/cli": "^1.2.16",
     "@types/mssql": "^9.1.7",
     "@types/node": "^16.7.13",
     "shx": "^0.3.4",
